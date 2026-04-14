@@ -1,0 +1,16 @@
+
+algoritmo "ex3"
+var
+   n, i, fatorial: inteiro
+inicio
+   escreva("Digite um número: ")
+   leia(n)
+
+   fatorial <- 1
+
+   para i de 1 ate n passo 1 faca
+      fatorial <- fatorial * i
+   fimpara
+
+   escreval("Fatorial: ", fatorial)
+fimalgoritmo

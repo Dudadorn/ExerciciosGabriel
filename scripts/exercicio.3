@@ -1,0 +1,45 @@
+algoritmo "ex3"
+var
+   contador, voto: inteiro
+   c1, c2, c3, c4, nulos, branco: inteiro
+inicio
+   contador <- 1
+   c1 <- 0
+   c2 <- 0
+   c3 <- 0
+   c4 <- 0
+   nulos <- 0
+   branco <- 0
+
+   enquanto contador <= 10 faca
+      escreva("Digite o voto (1 a 6): ")
+      leia(voto)
+
+      se voto = 1 entao
+         c1 <- c1 + 1
+      senao se voto = 2 entao
+         c2 <- c2 + 1
+      senao se voto = 3 entao
+         c3 <- c3 + 1
+      senao se voto = 4 entao
+         c4 <- c4 + 1
+      senao se voto = 5 entao
+         nulos <- nulos + 1
+      senao 
+         branco <- branco + 1
+          fimse
+        fimse
+      fimse
+    fimse
+  fimse
+
+      contador <- contador + 1
+   fimenquanto
+
+   escreva("Candidato 1: ", c1)
+   escreva("Candidato 2: ", c2)
+   escreva("Candidato 3: ", c3)
+   escreva("Candidato 4: ", c4)
+   escreva("Nulos: ", nulos)
+   escreva("Branco: ", branco)
+fimalgoritmo

@@ -1,0 +1,10 @@
+algoritmo "ex2"
+var
+   num: inteiro
+inicio
+   para num de 1 ate 20 passo 1 faca
+      se num mod 2 = 0 entao
+         escreval(num)
+      fimse
+   fimpara
+fimalgoritmo

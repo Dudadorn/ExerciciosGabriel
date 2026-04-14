@@ -1,0 +1,42 @@
+
+algoritmo "ex5"
+var
+   contador: inteiro
+   nota: real
+   conceito: caractere
+   qtdD, qtdAB, qtdE: inteiro
+inicio
+   contador <- 1
+   qtdD <- 0
+   qtdAB <- 0
+   qtdE <- 0
+
+   para i de 1 ate 10 passo 1 faca
+      escreva("Digite a nota: ")
+      leia(nota)
+
+      se nota <= 2.9 entao
+         conceito <- "E"
+         qtdE <- qtdE + 1
+      senao se nota <= 4.9 entao
+         conceito <- "D"
+         qtdD <- qtdD + 1
+      senao se nota <= 6.9 entao
+         conceito <- "C"
+      senao se nota <= 8.9 entao
+         conceito <- "B"
+         qtdAB <- qtdAB + 1
+      senao
+         conceito <- "A"
+         qtdAB <- qtdAB + 1
+        fimse
+      fimse
+    fimse
+  fimse
+
+   fimpara
+
+   escreval("Quantidade D: ", qtdD)
+   escreval("Quantidade A ou B: ", qtdAB)
+   escreval("Percentual E: ", (qtdE/10)*100, "%")
+fimalgoritmo

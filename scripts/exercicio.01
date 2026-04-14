@@ -1,0 +1,10 @@
+algoritmo "ex1"
+var
+   num: inteiro
+inicio
+   num <- 3
+
+   para num de 3 ate 30 passo 3 faca
+      escreval(num)
+   fimpara
+fimalgoritmo

@@ -1,0 +1,43 @@
+algoritmo "Ex4"
+
+var
+  contador, homens, qtdmulheres, sexo: inteiro
+  maior, menor, altura, somamulheres, media: real 
+
+inicio
+  contador <- 1
+  homens <- 0 
+  qtdmulheres <- 0
+  somamulheres <- 0
+  maior <- 0
+  menor <- 999
+ 
+    enquanto contador <= 15 faca
+      escreval("Digite a altura:")
+      leia(altura)
+
+      escreval("Digite M ou F:")
+      leia(sexo)
+  se altura > maior entao
+         maior <- altura
+      fimse
+      se altura < menor entao
+         menor <- altura
+      fimse
+      se sexo = "M" entao
+         homens <- homens + 1
+      senao
+         somaMulheres <- somaMulheres + altura
+         qtdMulheres <- qtdMulheres + 1
+      fimse
+      contador <- contador + 1
+   fimenquanto
+  
+  
+   media <- somaMulheres / qtdMulheres
+   escreva("Homens: ", homens)
+   escreva("Maior altura: ", maior)
+   escreva("Menor altura: ", menor)
+   escreva("Media mulheres: ", media)
+
+fimalgoritmo

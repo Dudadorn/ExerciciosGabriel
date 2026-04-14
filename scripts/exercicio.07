@@ -1,0 +1,44 @@
+algoritmo "ex7"
+var
+   codigo: inteiro
+   veiculos, ac, i, maiorIndice: inteiro
+   somaVeiculos, somaAc: real
+   cidades, contMenor2000: inteiro
+inicio
+   maiorIndice <- 0
+   somaVeiculos <- 0
+   somaAc <- 0
+   cidades <- 0
+   contMenor2000 <- 0
+
+   escreval("Digite o código da cidade (0 para parar): ")
+   leia(codigo)
+
+   para i de 1 ate cidades passo 1 faca
+      escreval("Veículos: ")
+      leia(veiculos)
+
+      escreval("Acidentes: ")
+      leia(ac)
+
+      se ac > maiorIndice entao
+         maiorIndice <- ac
+      fimse
+
+      somaVeiculos <- somaVeiculos + veiculos
+      cidades <- cidades + 1
+
+      se veiculos < 2000 entao
+         somaAc <- somaAc + ac
+         contMenor2000 <- contMenor2000 + 1
+      fimse
+
+      escreval("Digite o código da cidade (0 para parar): ")
+      leia(codigo)
+   fimpara
+
+   escreval("Maior indice de acidentes: ", maiorIndice)
+   escreval("Media de veiculos: ", somaVeiculos / cidades)
+   escreval("Media acidentes (menos de 2000 veiculos): ", somaAc / contMenor2000)
+fimalgoritmo
+

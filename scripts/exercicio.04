@@ -1,0 +1,31 @@
+algoritmo "ex4"
+var
+   contador: inteiro
+   nota: real
+   conceito: caractere
+inicio
+
+   para i de 1 ate 10 passo 1 faca
+      escreva("Digite a nota: ")
+      leia(nota)
+
+      se nota <= 2.9 entao
+         conceito <- "E"
+      senao se nota <= 4.9 entao
+         conceito <- "D"
+      senao se nota <= 6.9 entao
+         conceito <- "C"
+      senao se nota <= 8.9 entao
+         conceito <- "B"
+      senao
+         conceito <- "A"
+        fimse
+      fimse
+    fimse
+  fimse
+
+      escreval("Conceito: ", conceito)
+
+      contador <- contador + 1
+   fimpara
+fimalgoritmo
